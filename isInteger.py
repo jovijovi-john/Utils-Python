@@ -4,7 +4,6 @@ def isInteger(number):
 
     :param str number:    Entrada que será verificada
   """
-  number = number.strip() # removendo os espaços em brancos
   
   try:
     number = int(number)

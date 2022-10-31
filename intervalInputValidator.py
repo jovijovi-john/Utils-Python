@@ -16,6 +16,7 @@ def intervalInputValidator(leftLimit, rightLimit, *msg, **kwargs):
   input_number = validateInt(": ")
 
   # verifica se o número não está no intervalo
+ 
   if (not inInterval(input_number, leftLimit, rightLimit)):
     if (msg):
       msg = msg[0]
@@ -34,5 +35,5 @@ def intervalInputValidator(leftLimit, rightLimit, *msg, **kwargs):
 
 
 
-intervalInputValidator(10, 20, "informe um número entre @leftLimit e @rightLimit")
+intervalInputValidator("10", "20", "informe um número entre @leftLimit e @rightLimit")
 
