@@ -1,4 +1,4 @@
-def isInteger(number):
+def isInteger(number: str):
   """
     Retorna uma entrada é um inteiro ou não
 
