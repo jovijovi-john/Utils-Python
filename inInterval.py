@@ -1,5 +1,5 @@
-from printMessageError import printMessageError
-from isInteger import isInteger
+from utils.printMessageError import printMessageError
+from utils.isInteger import isInteger
 
 def inInterval(number: int, leftLimit: int, rightLimit: int):
 
@@ -22,7 +22,7 @@ def inInterval(number: int, leftLimit: int, rightLimit: int):
   if (not isInteger(rightLimit)):
     printMessageError("rightLimit deve ser um número inteiro!")
     raise ValueError()
-  if (rightLimit <= leftLimit):
+  if (rightLimit < leftLimit):
     printMessageError("O limite à direita deve ser maior que o limite à esquerda!")
     raise ValueError()
 

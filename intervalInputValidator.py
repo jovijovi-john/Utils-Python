@@ -1,6 +1,5 @@
-from printMessageError import printMessageError
-from inInterval import inInterval
-from validateInt import validateInt
+from utils.inInterval import inInterval
+from utils.validateInt import validateInt
 
 def intervalInputValidator(leftLimit, rightLimit, *msg, **kwargs):
   """
@@ -14,7 +13,6 @@ def intervalInputValidator(leftLimit, rightLimit, *msg, **kwargs):
     """
   
   input_number = validateInt(": ")
-
   # verifica se o número não está no intervalo
  
   if (not inInterval(input_number, leftLimit, rightLimit)):
@@ -35,5 +33,5 @@ def intervalInputValidator(leftLimit, rightLimit, *msg, **kwargs):
 
 
 
-intervalInputValidator("10", "20", "informe um número entre @leftLimit e @rightLimit")
+# intervalInputValidator("10", "20", "informe um número entre @leftLimit e @rightLimit")
 

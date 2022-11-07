@@ -1,5 +1,5 @@
-from isInteger import isInteger
-from printMessageError import printMessageError
+from utils.isInteger import isInteger
+from utils.printMessageError import printMessageError
 
 def validateInt(msg="Digite um número: ", msgError="Digite um número válido"):
   """
